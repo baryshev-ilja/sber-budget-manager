@@ -1,5 +1,8 @@
 import { createRoot } from 'react-dom/client';
 
+import '@/app/styles/index.scss';
+import { App } from '@/app/App';
+
 const container = document.getElementById('root');
 
 if (!container) {
@@ -7,4 +10,4 @@ if (!container) {
 }
 const root = createRoot(container);
 
-root.render(<h1>Hello!!!!</h1>);
+root.render(<App />);

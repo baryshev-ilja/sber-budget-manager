@@ -1,0 +1,50 @@
+@import "reset/normalize";
+@import "reset/reset";
+@import "fonts/fonts";
+@import "variables/global";
+@import "themes/light";
+@import "themes/dark";
+@import "breakpoints/breakpoints";
+@import "breakpoints/container";
+
+#root {
+    font-family: var(--font-family-sbsans-medium);
+    background-color: var(--bg-app);
+}
+
+.display {
+    font: var(--font-mobile-xxl);
+
+    @include tablet {
+        font: var(--font-tablet-xxl);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-xxl);
+    }
+}
+
+.medium {
+    font: var(--font-tablet-big);
+    color: var(--accent-green);
+
+    @include tablet {
+        font: var(--font-tablet-big);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-big);
+    }
+}
+
+.regular {
+    font: var(--font-mobile-xl);
+
+    @include tablet {
+        font: var(--font-tablet-xl);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-xl);
+    }
+}

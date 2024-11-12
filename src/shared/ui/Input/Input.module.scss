@@ -10,7 +10,6 @@
     border: 1px solid var(--input-border);
     border-radius: 8px;
     outline: none;
-    transition: border 0.1s ease-in-out;
 
     &::placeholder {
         color: var(--text-gray);

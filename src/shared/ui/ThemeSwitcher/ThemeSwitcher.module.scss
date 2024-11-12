@@ -1,0 +1,96 @@
+@import "src/app/styles/breakpoints/breakpoints";
+
+.toggle-button {
+    display: flex;
+    width: 60px;
+    height: 33px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    background-color: var(--select-bg-inversion);
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: var(--accent-green);
+        transition: transform 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @include tablet {
+        width: 70px;
+        height: 38px;
+
+        &::before {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+.dark-icon {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 8px;
+    right: 8px;
+    color: var(--toggle-icon-noactive);
+
+    @include tablet {
+        width: 20px;
+        height: 20px;
+        top: 9px;
+        right: 9px;
+    }
+}
+
+.light-icon {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 8px;
+    left: 8px;
+    color: var(--toggle-icon-noactive);
+
+    @include tablet {
+        width: 20px;
+        height: 20px;
+        top: 9px;
+        left: 9px;
+    }
+}
+
+.light-theme {
+    &::before {
+        transform: translateX(0);
+    }
+
+    .light-icon {
+        color: var(--select-bg-inversion);
+    }
+
+    @include tablet {
+        &::before {
+            transform: translateX(0);
+        }
+    }
+}
+
+.dark-theme {
+    &::before {
+        transform: translateX(27px);
+    }
+
+    .dark-icon {
+        color: var(--select-bg-inversion);
+    }
+
+    @include tablet {
+        &::before {
+            transform: translateX(32px);
+        }
+    }
+}

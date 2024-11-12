@@ -1,3 +1,4 @@
+import { ToggleTheme } from '@/features/toggleTheme';
 import { cls } from '@/shared/lib/cls';
 import { LogoApp } from '@/shared/ui/LogoApp';
 import { HStack } from '@/shared/ui/Stack';
@@ -14,8 +15,9 @@ export const Navbar = (props: NavbarProps) => {
     return (
         <header className={cls(styles.navbar, {}, [className])}>
             <div className="container">
-                <HStack>
+                <HStack align="center" justify="between" max>
                     <LogoApp />
+                    <ToggleTheme />
                 </HStack>
             </div>
         </header>

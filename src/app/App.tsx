@@ -1,3 +1,7 @@
+import { memo } from 'react';
+
+import { AppWithTheme } from './providers/ThemeProvider';
+
 import { Card } from '@/shared/ui/Card';
 import { Input } from '@/shared/ui/Input';
 import { Select } from '@/shared/ui/Select';
@@ -28,7 +32,7 @@ const items = [
     },
 ];
 
-export const App = () => {
+const App = memo(() => {
     return (
         <div className="app">
             <Navbar />
@@ -68,4 +72,6 @@ export const App = () => {
             </div>
         </div>
     );
-};
+});
+
+export default AppWithTheme(App);

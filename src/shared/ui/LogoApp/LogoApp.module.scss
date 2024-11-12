@@ -1,0 +1,43 @@
+@import "src/app/styles/breakpoints/breakpoints";
+
+.logo-app-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @include tablet {
+        gap: 10px
+    }
+}
+
+.logo-icon {
+    width: 65px;
+    height: 19px;
+    color: var(--text-heading);
+
+    @include tablet {
+        width: 85px;
+        height: 24px;
+    }
+
+    @include desktop {
+        width: 113px;
+        height: 32px;
+    }
+}
+
+.logo-text {
+    font-size: var(--font-size-13);
+    line-height: var(--line-height-13);
+    color: var(--text-heading);
+
+    @include tablet {
+        font-size: var(--font-size-20);
+        line-height: var(--line-height-20);
+    }
+
+    @include desktop {
+        font-size: var(--font-size-24);
+        line-height: var(--line-height-24);
+    }
+}

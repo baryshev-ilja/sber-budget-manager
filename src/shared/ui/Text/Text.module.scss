@@ -1,0 +1,127 @@
+@import "@/app/styles/breakpoints/breakpoints.scss";
+
+.text {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+}
+
+.xs {
+    font: var(--font-mobile-xs);
+
+    @include tablet {
+        font: var(--font-tablet-xs);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-xs);
+    }
+}
+
+.s {
+    font: var(--font-mobile-s);
+
+    @include tablet {
+        font: var(--font-tablet-s);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-s);
+    }
+}
+
+.m {
+    font: var(--font-mobile-m);
+
+    @include tablet {
+        font: var(--font-tablet-m);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-m);
+    }
+}
+
+.m-bold {
+    font: var(--font-mobile-m-bold);
+
+    @include tablet {
+        font: var(--font-tablet-m-bold);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-m-bold);
+    }
+}
+
+.l {
+    font: var(--font-mobile-l);
+
+    @include tablet {
+        font: var(--font-tablet-l);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-l);
+    }
+}
+
+.xl {
+    font: var(--font-mobile-xl);
+
+    @include tablet {
+        font: var(--font-tablet-xl);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-xl);
+    }
+}
+
+.xxl {
+    font: var(--font-mobile-xxl);
+
+    @include tablet {
+        font: var(--font-tablet-xxl);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-xxl);
+    }
+}
+
+.big {
+    font: var(--font-mobile-big);
+
+    @include tablet {
+        font: var(--font-tablet-big);
+    }
+
+    @include desktop {
+        font: var(--font-desktop-big);
+    }
+}
+
+.heading {
+    color: var(--text-heading);
+}
+
+.white {
+    color: var(--text-white);
+}
+
+.green {
+    color: var(--accent-green);
+}
+
+.red {
+    color: var(--accent-red);
+}
+
+.gray {
+    color: var(--text-gray);
+}
+
+.gray-accent {
+    color: var(--text-gray-accent);
+}

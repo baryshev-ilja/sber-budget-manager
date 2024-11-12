@@ -1,0 +1,14 @@
+@import "src/app/styles/breakpoints/breakpoints";
+
+.card {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: var(--bg-app-accent);
+    box-shadow: var(--card-shadow);
+
+    @include desktop {
+        padding: 20px 20px 30px;
+    }
+}

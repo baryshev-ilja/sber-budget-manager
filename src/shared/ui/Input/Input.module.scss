@@ -1,0 +1,27 @@
+.input {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 40px;
+    width: 100%;
+    font: var(--font-mobile-m);
+    color: var(--text-heading);
+    background-color: var(--bg-app-accent);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.1s ease-in-out;
+
+    &::placeholder {
+        color: var(--text-gray);
+        font: var(--font-mobile-m);
+    }
+
+    &:focus {
+        border: 1px solid var(--accent-green);
+    }
+}
+
+.error {
+    border: 1px solid var(--accent-red);
+}

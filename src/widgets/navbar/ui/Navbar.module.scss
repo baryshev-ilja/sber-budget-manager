@@ -1,0 +1,11 @@
+@import "src/app/styles/breakpoints/breakpoints";
+
+.navbar {
+    height: 50px;
+    border-bottom: 1px solid var(--input-border);
+    background: var(--bg-app-accent);
+
+    @include tablet {
+        height: 70px;
+    }
+}

@@ -58,10 +58,6 @@ export const App = () => {
                         />
                     </VStack>
                 </Card>
-                {/* <Input */}
-                {/*    label="Название" */}
-                {/*    placeholder="fsdfsadfasdf" */}
-                {/* /> */}
                 <Select
                     onChange={() => {}}
                     label="Категория"

@@ -1,4 +1,7 @@
 :root {
+    // Микро-анимация
+    --transition-fn: cubic-bezier(0.99, 0.02, 0.115, 1.46);
+
     // Семейства шрифтов
     --font-family-sbsans-regular: "SB Sans Text Regular", sans-serif;
     --font-family-sbsans-medium: "SB Sans Text Medium", sans-serif;

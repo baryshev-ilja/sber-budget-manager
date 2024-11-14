@@ -1,0 +1,100 @@
+@import "src/app/styles/breakpoints/breakpoints";
+
+.main-layout {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 0;
+    padding-bottom: 75px;
+
+    @include tablet {
+        grid-row-gap: 20px;
+        padding: 0;
+    }
+
+    @include desktop {
+        &::after {
+            content: "";
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 70px;
+            width: 12px;
+            border-bottom: 1px solid var(--input-border);
+            background-color: var(--bg-app-accent);
+        }
+    }
+}
+
+.header-layout {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-wrapper-layout {
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+
+    @include tablet {
+        display: grid;
+        grid-template-areas:
+            "balance history"
+            "managements managements";
+        grid-template-columns: 1fr 213px;
+        grid-column-gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    @include tablet-max {
+        grid-template-areas:
+            "balance history"
+            "managements history";
+        grid-template-columns: minmax(308px, auto) minmax(311px, 560px);
+        grid-column-gap: 40px;
+    }
+
+    @include desktop {
+        grid-template-columns: 490px 540px;
+        grid-column-gap: 70px;
+    }
+}
+
+.balance-layout {
+    grid-area: balance;
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+
+    @include tablet {
+        top: 90px;
+    }
+}
+
+.history-layout {
+    grid-area: history;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    @include tablet {
+        position: relative;
+        z-index: unset;
+    }
+
+    @include tablet-max {
+        position: sticky;
+        top: 90px;
+        left: unset;
+        right: 25px;
+        height: calc(100vh - 130px);
+    }
+}
+
+.managements-layout {
+    grid-area: managements;
+}

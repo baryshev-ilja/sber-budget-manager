@@ -7,7 +7,34 @@
 @import "breakpoints/breakpoints";
 @import "breakpoints/container";
 
+html {
+    background-color: var(--bg-app);
+
+    @include desktop {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
 .app {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 100vh;
     font-family: var(--font-family-sbsans-medium);
     background-color: var(--bg-app);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--scroll-thumb);
+
+    &:hover,
+    &:active {
+        background: var(--accent-green);
+    }
 }

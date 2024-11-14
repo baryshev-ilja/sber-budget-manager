@@ -4,7 +4,7 @@
     font-weight: 400;
     font-display: swap;
     src:
-        url("@/app/styles/fonts/sbsans-regular.woff2") format("woff2"),
+        url("@/app/styles/fonts/sbsanstext-regular.woff2") format("woff2"),
         url("@/app/styles/fonts/sbsans-regular.woff") format("woff"),
         url("@/app/styles/fonts/sbsans-regular.ttf") format("ttf");
 }
@@ -15,7 +15,7 @@
     font-weight: 500;
     font-display: swap;
     src:
-        url("@/app/styles/fonts/sbsans-medium.woff2") format("woff2"),
+        url("@/app/styles/fonts/sbsanstext-medium.woff2") format("woff2"),
         url("@/app/styles/fonts/sbsans-medium.woff") format("woff"),
         url("@/app/styles/fonts/sbsans-medium.ttf") format("ttf");
 }
@@ -26,7 +26,7 @@
     font-weight: 700;
     font-display: swap;
     src:
-        url("@/app/styles/fonts/sbsans-display.woff2") format("woff2"),
+        url("@/app/styles/fonts/sbsansdisplay-semibold.woff2") format("woff2"),
         url("@/app/styles/fonts/sbsans-display.woff") format("woff"),
         url("@/app/styles/fonts/sbsans-display.ttf") format("ttf");
 }
